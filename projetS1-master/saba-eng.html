@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La parole d'une femme</title>
+    <link rel="stylesheet"  href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header " 
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start" >
+            <a href="/">          
+            <img class="header__logo" src="public/icon/Logo.svg" alt="Logo de parole d'une femme">
+
+        </a></div>
+  
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+  
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="saba.html" ><img class="enfr" src="public/icon/Boutons anglais français.svg" alt="bouton anglais fr"></a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="histoire.html">The History of Feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="malala.html">Malala Yousafzai: an example of modern feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="saba.html">"Une fille dans la rivière : le prince du pardon"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="savoir+.html">Read more</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autre-projets.html">Other projects</a></li>
+                </ul>
+                <img class="decorform" src="public/icon/Formes du décors.svg">
+            </nav>
+        </div>
+
+    </header> 
+
+        <div class="hero__title">
+        <h1 class="hero__title--text">"A Girl in The River: The Prince of Forgiveness"</h1>
+        <p class="hero__title--legend">By Souhayl Sedira - 1 November 2021 - 2 min reading</p>
+        <img class="hero__rectangle2" src="public/icon/Rectangle 78.svg">
+        </div>
+
+    <div class="container">
+       
+       
+        <p class="chapos">cIn Pakistan at least one woman is killed every day in the name of her family's honour. 
+            This is an unthinkable situation, which becomes even more so when one considers that the criminals are rarely punished. This injustice is what Sharmeen Obaid-Chinoy denounces in her documentary film "A Girl in the River: The Price of Forgiveness". The film is produced by Tina Brown and Sheila Nevins in collaboration with HBO Documentary Films.
+            
+            </p>
+
+
+        <img src="public/img/Saba 1.webp">
+        <figcaption>Photo de Saba- Home Box Office</figcaption>
+
+       
+
+        <section >
+        <article> 
+            <h2>Synopsis</h2>
+            <p>We follow the story of Saba, an 18-year-old Pakistani woman from Gujranwala who is the victim of an assassination attempt by her own family.</p>
+            
+            <p>Saba cannot bear this choice and decides to run away with the love of her life.</p>
+            <p>She was then abducted, beaten, shot in the head with a revolver by her father and uncle and finally covered in a canvas bin and thrown into the river.</p>
+            <p>What is inspiring in the story is the fighting spirit of Sheba who refused to give up and die a silent death in the river on that dark night.</p>
+            <p><i>"Saba survived because of her presence of mind. She managed to hold on to the bushes at the river's edge and swam away as soon as she regained consciousness. Despite being shot in the face and hand, she reached the nearby gas station and received medical assistance in time.</i> says the police inspector who investigated the case.</p>
+
+            <h2>The struggle of Sheba</h2>
+            <p>As a result, she managed to stay alive despite suffering serious injuries. 
+            </p>
+            <p>She even decides to lodge a complaint, which is a big show of courage as it almost never happens. </p>
+            <img src="public/img/Saba 2.webp">
+            <figcaption>Saba Qaiser in hospital in June 2014 after being shot by the father. Yaqoob Shahzad/Reuters</figcaption>
+            <p>Unfortunately, Saba will be the victim of numerous threats and pressures affecting her in-laws and her son who was not even born at the time. Thus, another lawyer was appointed to him, one who was in favour of forgiveness. 
+            </p>
+            <p>She will therefore be forced to forgive her criminals and they will be released. Despite Saba's forgiveness, the two men express no regrets. The father will even go so far as to vow to do worse to his other daughters if they follow Saba's path: 'These girls are my responsibility. I must feed them and protect them. In return, they must not play with the pride of the family. It is an unforgivable sin."</p>
+            <p>Saba though alive is dead inside: "I forgave my father and uncle for the sake of my family and community. But I will never forgive them wholeheartedly. I leave my justice to Allah. He will protect me and destroy them for their sin." </p>
+            <p>Malala then sets a goal to become the 1st Minister of Pakistan to change the future of her country and allow all children to go to school.</p>
+
+            <h2>The impact of the film</h2>
+            <p>Sharmeen Obaid-Chinoy's film will be crowned with <a class="hero__link" href="https://youtu.be/6MbA_q5yTeA"> the Oscar for best short documentary film</a> in 2016. This exposure of the documentary will have a real impact as the Pakistani Parliament <a class="hero__link" href="savoir+.html">legislates</a>, in October 2016, against "honour killings". </p>
+            <p>A victory for the director.   </p>
+            <p>Unfortunately, despite the laws introduced, the law of silence pressuring young women victims continues to kill. So there is still a long way to go and a lot of fighting to do before Pakistani women can aspire to live a normal life.</p> <p>   
+             
+        </article>
+
+        
+        
+        </section>
+
+        <section>
+        <h2>Going further...</h2>
+        <article>
+            <p>You have finished reading the last article. If you want to go further and learn more about feminism go to our section <a class="hero__link" href="savoir+.html">“Read more"</a></p>  
+
+        </article>
+        </section>
+    </div>
+
+ 
+  
+
+    <footer class="footer">
+        <p>Souhayl Sedira-Group C2</p>
+        <address class="footer__address"></address><p>To contact me by email click <a href=mailto:souhayl.sedira23@gmail.com >ici</a> </p>
+        <div class="footer__social">
+            <h3 class="footer__title">Follow us</h3>
+            <ul class="footer__list list-unstyled">
+              <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook 1.svg" alt="icone facebook"></a></li>
+              <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram 1.svg" alt="icone instagram"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter 1.svg " alt="icone twitter"></a></li>
+        </div>
+
+        <p>Project carried out as part of an educational exercise in the department <a href=http://mmimontbeliard.com/ >MMI de Montbéliard</a> </p>
+
+    </footer>
+
+    <main>

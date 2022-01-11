@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La parole d'une femme</title>
+    <link rel="stylesheet"  href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header " 
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start" >
+            <a href="/">          
+            <img class="header__logo" src="public/icon/Logo.svg" alt="Logo de parole d'une femme">
+
+        </a></div>
+  
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+  
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="index-eng.html" ><img class="enfr" src="public/icon/Boutons anglais français.svg" alt="bouton anglais fr"></a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                    <li class="menu__item"><a class="menu__link" href="histoire.html">L’Histoire du féminisme</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="malala.html">Malala Yousafzai : un exemple du féminisme moderne</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="saba.html">"A Girl in The River:The Prince of Forgiveness"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="savoir+.html">En savoir +</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autre-projets.html">Autres Projets</a></li>
+                </ul>
+                <img class="decorform" src="public/icon/Formes du décors.svg">
+            </nav>
+        </div>
+
+    </header> 
+     <div class="hero">
+        <div class="hero__header container">
+
+        <img class="hero__img" src="public/img/18b8e5216ce857f75d8224b5ef2441f3 1.webp" alt="Illustration 3 femmes">
+        <h1 class="hero__titlesite">Parole <br> d'une femme</h1>
+        <img class="hero__rectangle" src="public/icon/Rectangle 1.svg">
+
+        
+     </div>
+
+     
+     
+    <section class="chapo">
+     
+        <p class="chapo__text">Découvrez <span style="color:#0E235B;"><b> l’histoire du féminisme</b></span> avec ses origines et son évolution.
+            <br>Puis intéressez-vous à une figure du féminisme moderne : <span style="color:#0E235B;"><b>Malala Yousafzai</b></span>.           
+            <br>Enfin vous pourrez aller plus loin en vous penchant sur le film documentaire <span style="color:#0E235B;"><b>"A Girl in The River : The Price of Forgiveness"</b></span>"A Girl in The River : The Price of Forgiveness" réalisé par Sharmeen Obaid-Chinoy véritable reflet des horribles inégalités que subissent les femmes du monde.</p>
+
+    </section>
+
+    <div class="body">
+
+        <section class="allcards">
+
+        <img class="card__polygon" src="public/icon/Polygon 16.svg">
+
+    
+        <article class="card">  <a href="histoire.html">  
+            <img class="card__image" src="public/img/Tweet Manif.webp" alt="Manifestation 8 Mars"></a>
+
+            <div class="card__body">
+            <h2 class="card__title"><a class="card__title-link" href="histoire.html">L’histoire du féminisme</a></h2>
+            <p class="card__intro" ><a class="card__intro-link" href="histoire.html">D’où viens le mouvement féministe ? Qui l'a créé ? Comment est-il devenu si important ? Suivez-nous, on vous explique tout. </a></p>
+            <a href="histoire.html"> <button class="card__button"><p>LIRE L'ARTICLE</p></button></a>
+            
+        </div>
+  
+        </article>
+
+        <article class="card">  <a href="malala.html">  
+            <img class="card__image" src="public/img/Tweet Malala.webp" alt="Malala Yousafzai"></a>
+
+            <div class="card__body">         
+            <h2 class="card__title"><a class="card__title-link" href="malala.html">Malala Yousafzai : un exemple du féminisme moderne</a></h2>
+            <p class="card__intro"><a class="card__intro-link" href="malala.html">Elle ne vous dit peut-être rien pourtant son histoire mérite d'être connue de tous.</a></p>
+            <a href="malala.html"><button class="card__button"><p>LIRE L'ARTICLE</p></button></a>
+            </div>
+  
+        </article>
+
+        <article class="card">  <a href="saba.html">  
+            <img class="card__image" src="public/img/Tweet Saba.webp" alt="Saba Pakistan"></a>
+            <div class="card__body">
+            <h2 class="card__title"><a class="card__title-link" href="saba.html">"A Girl in The River:The Prince of Forgiveness" 
+             </a></h2>
+            <p class="card__intro"><a class="card__intro-link" href="saba.html">Zoom sur l'excellent film documentaire de Sharmeen Obaid-Chinoy dénonçant l’une des plus grosses inégalités subi par les femmes au Pakistan: le crime d’honneur.            </a></p>
+            <a href="saba.html"><button class="card__button"><p>LIRE L'ARTICLE</p></button></a> 
+        </div>
+
+
+  
+        </article>
+        
+        <div class="poster"> 
+            <img class="poster__image" src="public/img/Visuel film.webp" alt="Affiche film">
+            <figcaption class="poster__legend">Visuel du film documentaire "A Girl in The River: The Prince of Forgiveness" </figcaption>
+
+        </div>
+
+        
+        
+        </section>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>Souhayl Sedira-Groupe C2</p>
+        <address class="footer__address"></address><p>Pour me contacter par mail cliquez <a href=mailto:souhayl.sedira23@gmail.com >ici</a> </p>
+        <div class="footer__social">
+            <h3 class="footer__title">Nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+              <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook 1.svg" alt="icone facebook"></a></li>
+              <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram 1.svg" alt="icone instagram"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter 1.svg" alt="icone twitter"></a></li>
+        </div>
+
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href=http://mmimontbeliard.com/ >MMI de Montbéliard</a> </p>
+
+    </footer>
+
+    <main>

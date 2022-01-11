@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La parole d'une femme</title>
+    <link rel="stylesheet"  href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header " 
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start" >
+            <a href="/">          
+            <img class="header__logo" src="public/icon/Logo.svg" alt="Logo de parole d'une femme">
+
+        </a></div>
+  
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+  
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="histoire.html" ><img class="enfr" src="public/icon/Boutons anglais français.svg" alt="bouton anglais fr"></a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="histoire.html">The History of Feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="malala.html">Malala Yousafzai: an example of modern feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="saba.html">"Une fille dans la rivière : le prince du pardon"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="savoir+.html">Read more</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autre-projets.html">Other projects</a></li>
+                </ul>
+                <img class="decorform" src="public/icon/Formes du décors.svg">
+            </nav>
+        </div>
+
+    </header> 
+
+     <div class="hero__title">
+        <h1 class="hero__title--text">L’Histoire du féminisme</h1>
+        <p class="hero__title--legend">Par Souhayl Sedira - 1 novembre 2021 - 2 min  de lecture</p>
+        <img class="hero__rectangle1" src="public/icon/Rectangle 78.svg">
+
+     </div>
+
+
+    <div class=" container">
+        <p class="chapos">«Féministe ». 
+            Un mot qui, pour nous, citoyens du monde moderne, est totalement commun et n'est plus du tout censé nous choquer. 
+            Hors, sa première réelle citation par Hubertine Auclert au XIX ème siècle n'eut pas le même accueil. Mais pour comprendre tout ça il faut faire un bond en arrière et se pencher sur l'histoire du féminisme.
+            </p>
+        <img src="public/img/Manif 1.webp">
+        <figcaption>Manifestation le 8 mars 2018 à Paris — VINCENT LOISON/SIPA</figcaption>
+
+        </div>
+
+    <section>
+        <article class="container"> 
+            <h2 classe="hero__sub-title" >Origine du féminisme</h2>
+            <p>1791. Une date importante pour le <a class="hero__link" href="savoir+.html">mouvement féministe</a>.</p>
+            
+            <p><a class="hero__link" href="savoir+.html">Olympe De Gouges</a>, révolutionnaire du XVIIIe siècle publie la Déclaration des Droits de la femme et de citoyenne. Cette déclaration remet en cause l’inégalité des droits accordés aux femmes par rapport aux hommes.
+                Olympe de Gouges estime que la femme étant un être doté de facultés intellectuelles, il n’y a pas de raisons à ce qu’elle ai moins de droit que l’homme.</p>
+                <p>« La femme a le droit de monter à l'échafaud, elle doit avoir également le droit de monter à la tribune » Article X de la Déclaration des droits des femmes et des citoyennes, 1791. 
+                </p>
+                <p> Un texte qui fondera les bases du féminisme et fera d’Olympe De Gouges une des pionnières du mouvement</p>
+                <p>
+                    Mais malheureusement cette parution n’aura pas l’effet escompté au temps voulu car, la fin de la Révolution française et l'avènement de Napoléon va marquer un retour en arrière sur la question de l'émancipation de la femme. Il faudra donc attendre la deuxième moitié du XIXᵉ siècle pour que les femmes décident de se regrouper afin de lutter contre leurs désavantages civiques. Hubertine Auclert, pionnière du féminisme en France, sera la première à définir sa lutte comme “féministe”. Bien que mal accueillis et complètement incompris par une majorité d’hommes et même de femmes, le combat des droits des femmes est en marche et prend, petit à petit, de l'ampleur. </p>
+                <p>Ainsi, c'est seulement les féministes du XXᵉ siècle qui reconnaîtront les travaux d’Olympe De Gouges.</p>
+
+        </article>
+
+        <article class="container"> 
+            <h2>L'évolution du mouvement</h2>
+            <p>C'est en Grande-Bretagne, dans les années 1860, qu'apparaissent les premières revendications féministes.
+Leurs noms :<a class="hero__link" href="https://fr.wikipedia.org/wiki/Suffragette">Les Suffragettes</a> . Le mouvement progresse et se répand même aux États-Unis. En France, les premières organisations féministes naissent dans les années 1860. 
+La romancière socialiste André Léo crée en 1868 la Ligue pour les droits des femmes. 
+L'Association pour le Droit des femmes voit le jour en 1870, devenue la Ligue française pour le droit des femmes en 1877 et dont Hubertine Auclert est membre. Ainsi les combats des féministes vont changer à travers le monde et les époques. </p>
+            <img src="public/img/Manif 2.webp">
+            <figcaption>"French Women want to vote". Paris. Photograph. Around 1935. (Photo by Imagno/Getty Images)</figcaption>
+            <p>On peut regrouper ces différents changements du féminisme, en 4 phases à travers le temps :</p>
+            <ul>
+                <li>Première phase : Du Milieu du XIXe siècle au début du XXe siècle, les féministes du monde entier vont alors mener plusieurs combats pour leurs droits politiques. Ainsi elles obtiendront le Droit de Vote en 1918 pour l'Angleterre et en 1944 en France.  </li>
+                <li>Deuxième phase : De la fin des années 1960 au début des années 1970, les féministes luttent contre l'oppression <a class="hero__link" href="savoir+.html">patriarcale</a> et pour l'égalité sociale. 
+                </li>
+                <li>Troisième phase : Dans les années 1990 les féministes mettent en avant les oppressions subies en tant que femmes, et plus particulièrement en tant que femmes issues de minorités (personnes racisées,<a class="hero__link" href="savoir+.html">LGBT</a>, etc). </li>
+                <li> Phase actuelle : Au début des années 2010, les féministes dénonce les violences faites aux femmes (harcèlement sexuel, violences conjugales, féminicides viols)</li>
+            </ul>                
+            <p> Si cette phase est surement la plus entendue, c’est grâce au développement des réseaux sociaux ; #MeToo et en son équivalent français #BalanceTonPorc en 2017 en sont de parfaits exemples.</p>
+            <p>La phase actuelle de féminisme que nous vivons, a permis aux femmes du monde entier de se réveiller et de lutter pour le droit de la femme.</p>
+            <p>Bien que le mouvement soit plus important dans les pays du Nord, les pays en voie de développement sont de plus en plus concernés. C’est d’ailleurs le cas du Pakistan, pays natal de <a class="hero__link" href="malala.html">Malala Yousafzai</a>  , figure du féminisme.</p>
+
+
+
+            
+            
+
+
+        </article>
+
+        
+        
+    </section>
+        
+
+        <section class="allcards">
+            <h2 class="allcard__title">Article lié</h2>
+
+    
+            <article class="card">  <a href="malala.html">  
+                <img class="card__image" src="public/img/Tweet Malala.webp" alt="Malala Yousafzai"></a>
+    
+                <div class="card__body">         
+                <h2 class="card__title"><a class="card__title-link" href="malala.html">Malala Yousafzai : un exemple du féminisme moderne</a></h2>
+                <p class="card__intro"><a class="card__intro-link" href="malala.html">Elle ne vous dit peut-être rien pourtant son histoire mérite d'être connue de tous.</a></p>
+                <a href="malala.html"><button class="card__button"><p>LIRE L'ARTICLE</p></button></a>
+                </div>
+      
+            </article>
+
+        </section>
+    
+      
+
+
+  
+
+
+        <footer class="footer">
+            <p>Souhayl Sedira-Group C2</p>
+            <address class="footer__address"></address><p>To contact me by email click <a href=mailto:souhayl.sedira23@gmail.com >ici</a> </p>
+            <div class="footer__social">
+                <h3 class="footer__title">Follow us</h3>
+                <ul class="footer__list list-unstyled">
+                  <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook 1.svg" alt="icone facebook"></a></li>
+                  <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram 1.svg" alt="icone instagram"></a></li>
+                  <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter 1.svg " alt="icone twitter"></a></li>
+            </div>
+    
+            <p>Project carried out as part of an educational exercise in the department <a href=http://mmimontbeliard.com/ >MMI de Montbéliard</a> </p>
+    
+        </footer>
+
+    <main>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La parole d'une femme</title>
+    <link rel="stylesheet"  href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header " 
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start" >
+            <a href="/">          
+            <img class="header__logo" src="public/icon/Logo.svg" alt="Logo de parole d'une femme">
+
+        </a></div>
+  
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+  
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="malala.html" ><img class="enfr" src="public/icon/Boutons anglais français.svg" alt="bouton anglais fr"></a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="histoire.html">The History of Feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="malala.html">Malala Yousafzai: an example of modern feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="saba.html">"Une fille dans la rivière : le prince du pardon"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="savoir+.html">Read more</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autre-projets.html">Other projects</a></li>
+                </ul>
+                <img class="decorform" src="public/icon/Formes du décors.svg">
+            </nav>
+        </div>
+
+    </header> 
+
+    <div class="hero__title">
+        <h1 class="hero__title--text">Malala Yousafzai: an example of modern feminism</h1>
+        <p class="hero__title--legend">By Souhayl Sedira - 1 November 2021 - 3 min reading</p>
+        <img class="hero__rectangle2" src="public/icon/Rectangle 78.svg">
+        </div>
+
+    <section class="container">
+            <p class="chapos">Malala Yousafzai is a Pakistani women's rights activist, born on 12 July 1997 in Mingora, Khyber Pakhtunkhwa province.
+                She lives a fairly quiet life, loves her family, friends and school. Indeed, she understands the importance of education from an early age, as her father is a teacher and an activist for the right to education. But when she was only 11 years old, Malala's village was invaded by the Taliban...
+               </p>
+            <img src="public/img/Malala 1 (2).webp">
+            <figcaption> Photo of Malala Yousafzai POOL New / REUTERS</figcaption>
+        
+
+        
+
+        <article> 
+            <h2>Malala's struggle</h2>
+            <p>The fanatic religious terrorist group, is taking over Pakistan and banning girls from school.
+            </p>
+            
+            <p>Malala then refuses this injustice and begins to lead a fight on her own scale.
+                She then publishes messages denouncing the injustices that she and the other inhabitants suffer in a blog with the permission and support of her father.
+                </p>
+                <p>She used a <a class="hero__link" href="savoir+.html">pseudonym</a> of Gul Makai ("cornflower") to avoid being recognised by the Taliban in her country.
+                    Her commitment to establishing equality between girls and boys in her country eventually gets heard around the world.
+                    </p>
+            <p> Over the next three years, Malala would continue to write about the <a class="hero__link" href="savoir+.html">blog</a> et va nous faire part de ses envies d’étudier dans un pays où les écoles pour filles sont fermées ou bombardées.
+            <h2>Un changement de vie</h2>
+            <p>Malheureusement, ses écrits prenant une grande ampleur, l’anonymat de Malala tombe. Le 9 octobre 2012, un homme armé des talibans pakistanais monte à bord du bus scolaire où se trouve Malala, l'appelle par son nom, puis lui tire dans le visage. Très gravement blessée au cou et à la tête, la jeune fille sera soignée dans 3 hôpitaux différents avant d’être transférée dans un hôpital aux Royaumes-Unis.</p>
+            <p>Elle mettra 4 mois à se soigner complètement et décidera de déménager en Grande-Bretagne, sa famille jugeant que retourner au Pakistan était bien trop dangereux pour la fille de 15 ans. 
+            </p>
+            <p>Ainsi grâce à son histoire touchante Malala est devenue une héroïne de la lutte pour le droit à l’éducation. Malgré les menaces et l’attentat qu’elle a subi, elle n’abandonnera jamais son combat. Elle écrit même un livre se nommant <a class="hero__link" href="https://livre.fnac.com/a7061023/Malala-Yousafzai-Moi-Malala" >“Moi, Malala”</a> qui sera publié le 28/05/2014 dans 21 pays différents. 
+            </p>
+            <p>Tandis que les talibans veulent faire taire Malala, celle-ci devient le porte-parole des jeunes filles du monde. 
+            </p>
+            <p>Malala se fixe alors un objectif : devenir 1 ère ministre du Pakistan pour changer l’avenir de son pays et permettre à tous les enfants d’aller à l’école.</p>
+            <h2>La reconnaissance de Malala</h2>
+            <p>À partir de 2011, la jeune fille pakistanaise, exemple même du courage et de la paix, va recevoir de nombreux prix dont :</p>
+            <ul>
+ 
+                <li>En 2011 elle obtiendra le premier prix national de la jeunesse de la paix au Pakistan.
+                    Ce prix changera même de nom et deviendra “le prix Malala”</li>
+                <li>En 2013 elle obtiendra le prix de l’Ambassadeur de la Conscience d’Amnesty International en Irlande</li>
+                <li>Le prix international de la paix des enfants en 2013 aux Pays-Bas</li>
+                <li>Le prix Simone de Beauvoir pour la liberté des femmes 2013</li>
+                <li>Le 10 octobre 2014 elle reçoit le <a class="hero__link" href="savoir+.html">prix Nobel de la paix</a></li>
+ 
+            </ul>
+            <img src="public/img/Malala 2.webp">
+            <figcaption>Malala a reçu le prix Nobel de la Paix ce mercredi à Oslo - Suzanne Plunkett / Reuters</figcaption>
+            <p>À seulement 17 ans, elle devient alors la personne la plus jeune à recevoir ce prix.
+                Le jour de ses 16 ans,12 juillet 2013,elle fait un <a class="hero__link" href="https://youtu.be/HPRSnNFSkrs">discours à l'ONU</a> (Organisation des Nations unies) à New York. Elle y défend le droit à l'éducation pour tous les enfants, qui est l'un des 8 objectifs du plan de l'OMD (Millénaire pour le développement).</p>
+            <p>" Un enfant, un professeur, un livre, un crayon peuvent changer le monde." Discours aux Nations Unies, 12 juillet 2013.</p>
+            <p> Ces objectifs à réaliser ont été approuvés par la plupart des pays du monde et d'autres grandes institutions. 
+            </p>
+            <p>Aujourd’hui Malala continue ses études. Récemment, en 2020 elle a obtenu une licence en philosophie, politique et économie à l'Université d'Oxford.
+                Ainsi grâce à ses combats d’actualité et sa reconnaissance dû en grande partie à Internet et son blog, Malala est un exemple parfait de la féministe moderne, n’abandonnant pas la lutte pour l’avancé des droits de la femme comme l’on fait ses prédécesseurs féministes.</p>
+            <p>Malgré les avancées réalisées par Malala pour le droit des femmes de son pays, de nombreuses injustices persistent au Pakistan. L’excellent film documentaire diffusé en 2015 <a class="hero__link" href="saba.html"> "A Girl in the River : The Price of Forgiveness"</a> nous expose une facette horrible des violences subies par les femmes au Pakistan : le crime d’honneur.</p>   
+             
+
+
+
+        </article>
+
+        
+        
+    </section>
+
+    <section class="allcards">
+        <h2 class="allcard__title">Article lié</h2>
+
+
+        <article class="card">  <a href="saba.html">  
+            <img class="card__image" src="public/img/Tweet Saba.webp" alt="Saba Pakistan"></a>
+            <div class="card__body">
+            <h2 class="card__title"><a class="card__title-link" href="saba.html">"A Girl in The River:The Prince of Forgiveness" 
+             </a></h2>
+            <p class="card__intro"><a class="card__intro-link" href="saba.html">Zoom sur l'excellent film documentaire de Sharmeen Obaid-Chinoy dénonçant l’une des plus grosses inégalités subi par les femmes au Pakistan: le crime d’honneur.            </a></p>
+            <a href="saba.html"><button class="card__button"><p>LIRE L'ARTICLE</p></button></a> 
+        </div>
+
+  
+        </article>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <p>Souhayl Sedira-Group C2</p>
+        <address class="footer__address"></address><p>To contact me by email click <a href=mailto:souhayl.sedira23@gmail.com >ici</a> </p>
+        <div class="footer__social">
+            <h3 class="footer__title">Follow us</h3>
+            <ul class="footer__list list-unstyled">
+              <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook 1.svg" alt="icone facebook"></a></li>
+              <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram 1.svg" alt="icone instagram"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter 1.svg " alt="icone twitter"></a></li>
+        </div>
+
+        <p>Project carried out as part of an educational exercise in the department <a href=http://mmimontbeliard.com/ >MMI de Montbéliard</a> </p>
+
+    </footer>
+
+    <main>

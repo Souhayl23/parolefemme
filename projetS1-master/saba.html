@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La parole d'une femme</title>
+    <link rel="stylesheet"  href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header " 
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start" >
+            <a href="/">          
+            <img class="header__logo" src="public/icon/Logo.svg" alt="Logo de parole d'une femme">
+
+        </a></div>
+  
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+  
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="saba-eng.html" ><img class="enfr" src="public/icon/Boutons anglais français.svg" alt="bouton anglais fr"></a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                    <li class="menu__item"><a class="menu__link" href="histoire.html">L’Histoire du féminisme</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="malala.html">Malala Yousafzai : un exemple du féminisme moderne</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="saba.html">"A Girl in The River:The Prince of Forgiveness"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="savoir+.html">En savoir +</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autre-projets.html">Autres Projets</a></li>
+                </ul>
+                <img class="decorform" src="public/icon/Formes du décors.svg">
+            </nav>
+        </div>
+
+    </header> 
+
+        <div class="hero__title">
+        <h1 class="hero__title--text">"A Girl in The River: The Prince of Forgiveness"</h1>
+        <p class="hero__title--legend">Par Souhayl Sedira - 1 novembre 2021 - 2 min  de lecture</p>
+        <img class="hero__rectangle2" src="public/icon/Rectangle 78.svg">
+        </div>
+
+    <div class="container">
+       
+       
+        <p class="chapos">Au Pakistan au moins une femme est tuée chaque jour au nom de l’honneur de sa famille. 
+            Une situation impensable qui le devient encore plus, quand on sait que les criminels ne sont que très rarement punis. Cette injustice, c’est ce que Sharmeen Obaid-Chinoy dénonce dans son film documentaire “A Girl in the River: The Price of Forgiveness”. Le film est produit par Tina Brown et Sheila Nevins en collaboration avec Films documentaires HBO.
+            
+            </p>
+
+
+        <img src="public/img/Saba 1.webp">
+        <figcaption>Photo de Saba— Home Box Office</figcaption>
+
+       
+
+        <section >
+        <article> 
+            <h2>Synopsis</h2>
+            <p>Nous allons suivre l’histoire de Saba, une jeune femme pakistanaise de 18 ans originaire de Gujranwala victime d’une tentative d’assassinat par sa propre famille.</p>
+            
+            <p>Saba ne pouvant pas supporter ce choix, décide de fuguer avec l’amour de sa vie.</p>
+            <p>Elle fut alors enlevée, battue, blessée au revolver à la tête par son père et son oncle pour être finalement recouverte dans un bac de toile et jeter dans la rivière.</p>
+            <p>Ce qui est inspirant dans le récit, c'est l'esprit combatif de Saba qui a refusé d'abandonner et de mourir d'une mort silencieuse dans la rivière par cette nuit noire.</p>
+            <p><i>« Saba a survécu grâce à sa présence d'esprit. Elle a réussi à tenir les buissons au bord de la rivière et a nagé dès qu'elle a repris conscience. Malgré une balle dans le visage et une main, elle a atteint la station-service voisine et a reçu une assistance médicale à temps »</i> déclare l'inspecteur de police qui a enquêté sur l'affaire.</p>
+
+            <h2>Le combat de Saba</h2>
+            <p>Elle parvient donc à rester en vie malgré de grosses séquelles. 
+            </p>
+            <p>Elle décide même de porter plainte ce qui est une grosse preuve de courage puisque ça n’arrive presque jamais. </p>
+            <img src="public/img/Saba 2.webp">
+            <figcaption>Saba Qaiser à l'hôpital en juin 2014 après avoir été abattue par le père. Yaqoob Shahzad/Reuters</figcaption>
+            <p>Malheureusement Saba sera victime de nombreuses menaces et pressions touchant aussi sa belle-famille et son fils qui n’était alors même pas né. Ainsi on lui désignera un autre avocat que le sien, favorable au pardon. 
+            </p>
+            <p>Elle sera donc contrainte de pardonner à ses criminels et ceux-ci seront libérés. Malgré le pardon de Saba, les deux hommes n'expriment aucuns regrets. Le père ira même jusqu’à jurer de faire pire à ses autres filles si celles-ci suivaient le chemin de Saba : « Ces filles sont de ma responsabilité. Je dois les nourrir et les protéger. En retour, ils ne doivent pas jouer avec l'orgueil de la famille. C'est un péché impardonnable. »</p>
+            <p>Saba bien que vivante est morte de l’intérieur : ” J'ai pardonné à mon père et à mon oncle pour le bien de ma famille et de ma communauté. Mais je ne leur pardonnerai jamais de tout cœur. Je laisse ma justice à Allah. Il me protégera et les fera périr pour leur péché.” </p>
+            <p>Malala se fixe alors un objectif : devenir 1 ère ministre du Pakistan pour changer l’avenir de son pays et permettre à tous les enfants d’aller à l’école.</p>
+
+            <h2>L’impacte du film</h2>
+            <p>Le film de Sharmeen Obaid-Chinoy sera couronné de <a class="hero__link" href="https://youtu.be/6MbA_q5yTeA"> l’Oscar du meilleur court-métrage ­documentaire</a> en 2016. Cette exposition du documentaire aura un réel impact puisque le Parlement pakistanais <a class="hero__link" href="savoir+.html">légifère</a>, en octobre 2016, contre les « crimes d’honneur ». </p>
+            <p>Une victoire pour la réalisatrice.   </p>
+            <p>Malheureusement, malgré les lois instaurées, la loi du silence faisant pression sur les jeunes femmes victimes continue de tuer. Il reste donc encore  beaucoup de chemins et de combats pour que les femmes pakistanaises puissent aspirer à vivre normalement.</p>   
+             
+        </article>
+
+        
+        
+        </section>
+
+        <section>
+        <h2>Aller plus loin...</h2>
+        <article>
+            <p>Vous avez fini la lecture du dernier article. Si vous voulez aller plus loin et en savoir plus sur le féminisme rendez-vous sur notre section <a class="hero__link" href="savoir+.html">“En savoir+”</a></p>  
+
+        </article>
+        </section>
+    </div>
+
+ 
+  
+
+    <footer class="footer">
+        <p>Souhayl Sedira-Groupe C2</p>
+        <address class="footer__address"></address><p>Pour me contacter par mail cliquez <a href=mailto:souhayl.sedira23@gmail.com >ici</a> </p>
+        <div class="footer__social">
+            <h3 class="footer__title">Nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+              <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook 1.svg" alt="icone facebook"></a></li>
+              <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram 1.svg" alt="icone instagram"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter 1.svg" alt="icone twitter"></a></li>
+        </div>
+
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href=http://mmimontbeliard.com/ >MMI de Montbéliard</a> </p>
+
+    </footer>
+
+    <main>

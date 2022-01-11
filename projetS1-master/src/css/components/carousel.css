@@ -1,0 +1,75 @@
+/* Mise en forme du carousel en CSS.
+Utiliser flex pour positionner les item du carousel les uns à coté des autres.
+La propriété "overflow-x" avec la valeur "scroll" permet rogner le contenu afin de tenir horizontalement dans la boîte de remplissage et d'ajouter un scroll horizontal si le contenu déborde.
+https://developer.mozilla.org/fr/docs/Web/CSS/overflow-x
+
+La propriété "scroll-snap-type" définit la force d'adhérence aux points d'accroche en cas de défilement d'un conteneur
+https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type
+
+Les margin négatifs à gauche et à droite corresponde à l'éespace entre le navigateur et le début du contenu, de sorte que le carousel soit collé au bords de l'écran.
+
+*/
+
+.carousel .carousel-item {
+	width: 700px !important;
+	padding: 20px;
+  margin-top: 30%;
+  margin-left: 10%;
+}
+
+.card1{ 
+	border-radius: 8px;
+  width: 330px; 
+  height: 500px;
+  background-color: #0E235B;
+	position: relative !important;
+	right: 20px !important;
+  justify-items: center;
+  padding: 4%;
+  
+}
+.card1__image {
+  margin-left: 8%;
+
+  }
+
+
+.card1__title {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+}
+.card1__text {
+  color: white;
+  text-decoration: none;
+}
+
+
+.carousel {
+  display: flex;
+  gap: var(--space2x);
+  overflow-x: scroll;
+  margin-left: calc(0px - var(--space3x));
+  margin-right: calc(0px - var(--space3x));
+  scroll-snap-type: x mandatory;
+}
+
+
+/* pour personnaliser graphiquement la barre d'ascenseur */
+
+.carousel::-webkit-scrollbar-track {
+  background-color: var(--gray-200);
+  margin-bottom: 10%;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 4px;
+  background-color: var(--gray-white);
+  margin-bottom: 10%;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: var(--brand-saumon);
+  margin-bottom: 10%;
+}

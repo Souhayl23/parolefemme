@@ -1,0 +1,86 @@
+/* La position "fixed" permet à l'élément d'être toujours présent à l'écran, ici en haut à gauche et couvre toute la largeur de l'écran.
+Flex sert à positionner les éléments de l'en-tête (header__start et header__end) l'un à coté de l'autre alors que la valeur "space-between" de "justify-content" permet des les répartir de part et d'autre de l'écran (l'un à gauche, l'autre à droite)
+*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #FF8787;
+  padding: var(--space2x) var(--space3x);
+  display: flex;
+  justify-content: space-between;
+  transition: all .3s ease-in-out;
+}
+
+.header--atTop {
+  background-color: #FF8787;
+}
+
+.header__end {
+  display: flex;
+  gap: var(--space2x);
+}
+
+/* On annule le filtre d'inversion des couleurs lorsqu'on commence à scroller dans la page et que l'en-tête devient blanc */
+.header--atTop .header__search {
+  filter: none;
+}
+
+.header__logo {
+  display: flex;
+  width: 90%;
+}
+
+/* La position "fixed" permet à l'élément d'être toujours présent à l'écran, ici en haut à gauche et couvre toute la largeur de l'écran.
+Flex sert à positionner les éléments de l'en-tête (header__start et header__end) l'un à coté de l'autre alors que la valeur "space-between" de "justify-content" permet des les répartir de part et d'autre de l'écran (l'un à gauche, l'autre à droite)
+*/
+
+  
+  
+  
+
+
+.headers--atTop {
+  background-color: var(--gray-white);
+}
+
+.headers__end {
+  display: flex;
+  gap: var(--space2x);
+}
+
+.headers__search {
+  width: 40px;
+  filter: invert();
+}
+
+/* On annule le filtre d'inversion des couleurs lorsqu'on commence à scroller dans la page et que l'en-tête devient blanc */
+.headers--atTop .header__search {
+  filter: none;
+}
+
+.headers__logo {
+  display: flex;
+  width: 3%;
+
+}
+
+.headers__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30%;
+  margin-left: 10%;
+  width: 80%;
+
+ 
+  color: white;
+  text-align: center;
+  z-index: 1;
+  font-family: 'Parisienne', cursive;
+  
+  justify-content: center;
+  font-size: var(--title-xxl);
+
+}

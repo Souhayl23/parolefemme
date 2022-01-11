@@ -1,0 +1,195 @@
+/* L'élément fait 80% de la hauteur de l'écran.
+On utilise flex ici pour aligner le contenu textuel en bas de l'élément et faire ainsi en sorte que le texte du titre s'étende vers le haut en fonction de la densité textuelle. */
+.hero__header {
+  position: relative;
+  color: var(--gray-white);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: var(--space5x);
+}
+
+/* L'élément qui contient l'image est positionné en absolu pour permettre au titre de venir se superposer à l'image. Toutes les propriétés de position à 0 permettent d'étendre cet élément à tout l'élément parent, positionné en relatif. */
+.hero__img {
+  background-repeat: repeat;
+  position: absolute ;
+  top: 0; left: 0;
+ ; right: 0;
+  z-index: -2;
+}
+
+.hero__icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+
+  padding-left: 43%;
+  padding-right: auto;
+  width: 15%;
+  z-index: 0;
+}
+
+.hero__rectangle {
+  position: absolute;
+  width: 375px;
+  height: 506px;
+  left: 0px;
+  top: 490px;
+}
+
+.hero__rectangle2{
+  position: absolute;
+  width: 375px;
+  height: 110.5px;
+  left: 0px;
+  top: 215px;
+  z-index: -2;
+}
+.hero__rectangle1{
+  position: absolute;
+  width: 375px;
+  height: 110.5px;
+  left: 0px;
+  top: 195px;
+  z-index: -2;
+}
+.hero__rectangle7{
+  position: absolute;
+  width: 375px;
+  height: 110.5px;
+  left: 0px;
+  top: 160px;
+  z-index: -2;
+}
+.hero__titlesite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30%;
+  margin-left: 10%;
+  width: 80%;
+  height: 15%;
+  background-color: #FCCFCE;
+  color: #0E235B;
+  text-align: center;
+  z-index: 1;
+  font-family: 'Parisienne', cursive;;
+  border: 2px solid white;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 300%;
+}
+.hero__title {
+  display: flex;
+  background-color: #FCCFCE;
+  margin-top: 27%;
+  flex-direction: column;
+}
+
+  .hero__title--text {
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 15%;
+    font-weight: 900;
+    font-size: var(--text-xl);
+    color: #0E235B;
+    margin-left: auto;
+    margin-right: auto;
+    
+    z-index: 1;
+    font-family:"Playfair Display", serif;
+
+    background-color: #FCCFCE;
+  }
+
+.hero__sub-title {
+  
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--text-sm);
+  font-weight: bold;
+  line-height: 1.8;
+  
+}
+.hero__title--legend {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+
+/* Le chapo occupe un minimum d'espace correspondant à 20% de la hauteur de l'écran.
+On utilise flex pour placer les éléments enfants les uns à cotés des autres, espacés grâce à "gap" d'une valeur de 24px (var(--space3x)) */
+.chapo {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 105%;
+  margin-bottom: 0px;
+  min-height: 20vh;
+  display: flex;
+  gap: var(--space3x);
+  align-items: center;
+}
+
+.chapos {
+  margin-top: 40%;
+  display: flex;
+  align-items: center;
+}
+
+/* La propriété flex avec la valeur 1 oblige les éléments à se partager l'espace de manière équivalente. */
+.chapo__title {
+  flex: 1;
+  text-align: center;
+}
+
+.hero__link {
+  color: #FF8787;
+  text-decoration: none;
+}
+
+.chapo__link img {
+  display: block;
+  margin: auto;
+}
+
+
+.chapo__text {
+  font-size: var(--text-m);
+  line-height: 1.5;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+
+  padding:0px
+
+  
+}
+
+.list__item {
+  margin-bottom: 9%;
+  list-style: none;
+
+
+}
+
+.list__item--link {
+  color: #F14848;
+  text-decoration: none;
+  padding-left: 3%;
+  font-style: italic;
+  font-weight: bold;
+  
+  
+}
+
+

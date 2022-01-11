@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La parole d'une femme</title>
+    <link rel="stylesheet"  href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header " 
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start" >
+            <a href="/">          
+            <img class="header__logo" src="public/icon/Logo.svg" alt="Logo de parole d'une femme">
+
+        </a></div>
+  
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+  
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="savoir-eng.html" ><img class="enfr" src="public/icon/Boutons anglais français.svg" alt="bouton anglais fr"></a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                    <li class="menu__item"><a class="menu__link" href="histoire.html">L’Histoire du féminisme</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="malala.html">Malala Yousafzai : un exemple du féminisme moderne</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="saba.html">"A Girl in The River:The Prince of Forgiveness"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="savoir+.html">En savoir +</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autre-projets.html">Autres Projets</a></li>
+                </ul>
+                <img class="decorform" src="public/icon/Formes du décors.svg">
+            </nav>
+        </div>
+
+    </header> 
+
+     <div class="hero__title">
+        <h1 class="hero__title--text2">En savoir +</h1>
+
+        <img class="hero__rectangle7" src="public/icon/Rectangle 78.svg">
+
+     </div>
+    <body class="grey darken-3 " >
+
+
+        <section class="container">
+          <div class="carousel carousel-slider">
+              <div class="carousel-item black-text" >
+              <div class="card1">
+                  <div class="card1__image">
+                     <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 6.webp">
+                    </div>
+                
+                <div class="card1-content">
+                  <h3 class="card1__title">Olympe De Gouges<br>
+                    (1748-1793)</h3>
+            
+                  <p class="card1__text">Olympe De Gouges est une héroïne révolutionnaire considérée comme l'une des premières féministes françaises. Elle est surtout connu pour avoir écrit son célèbre texte intitulé "Déclaration des droits de la femme et de la citoyenne". 
+                    Un texte qui fondera les bases du féminisme.</p>
+                </div>
+              </div>  
+              </div>
+              <div class="carousel-item black-text" >
+                <div class="card1">
+                    <div class="card1__image">
+                       <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 7.webp">
+                      </div>
+                  
+                  <div class="card1-content">
+                    <h3 class="card1__title">Clara Zetkin<br>(1857-1933)</h3>
+              
+                    <p class="card1__text">Clara Zetkin est une des précurseur(e)s de la lutte pour l’émancipation des femmes, militante communiste allemande qui va consacrer sa vie à organiser et à mobiliser les femmes travailleuses, les ouvrières du textile et de l’agriculture, les domestiques  et les gens de maison pour qu’elles arrachent leurs droits et s’investissent en nombre dans les luttes pour la transformation de la société.
+
+                  </div>
+                </div>  
+                </div> 
+                <div class="carousel-item black-text" >
+                    <div class="card1">
+                        <div class="card1__image">
+                           <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 8.webp">
+                          </div>
+                      
+                      <div class="card1-content">
+                        <h3 class="card1__title">Emmeline Pankhurst<br>(1858-1928)</h3>
+                  
+                        <p class="card1__text">Emmeline Pankhurst est une des figures de proue du mouvement des suffragettes.
+                            Elle fut à l’origine de tactiques controversées visant à obtenir le droit de vote pour les femmes. Elle a même été enfermée en prison pour ses idéaux sans toutefois cesser de se battre pour eux.
+                               
+    
+                      </div>
+                    </div>  
+                    </div> 
+
+                    <div class="carousel-item black-text" >
+                        <div class="card1">
+                            <div class="card1__image">
+                               <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 9.webp">
+                              </div>
+                          
+                          <div class="card1-content">
+                            <h3 class="card1__title">Émilie Gourd<br>(1879-1946)</h3>
+                      
+                            <p class="card1__text">Journaliste dans l'âme, brillante oratrice,Présidente de l'association suisse pour le suffrage féminin de 1914 à 1928, Émilie Gourd consacra toute son énergie à l'obtention du droit de vote des femmes en Suisse.
+                                   
+        
+                          </div>
+                        </div>  
+                        </div> 
+                        <div class="carousel-item black-text">
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 10.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Marguerite Yourcenar<br>(1903-1987)</h3>
+                          
+                                <p class="card1__text">Marguerite Yourcenar fut la première femme à intégrer l'Académie Française. Écrivaine et poétesse, elle est l’auteure des Mémoires d'Hadrien”. Un profond humanisme se dégage de ses œuvres .
+           
+                                       
+            
+                              </div>
+                            </div>  
+                        </div> 
+                        <div class="carousel-item black-text">  
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 11.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Rosa Parks<br>(1913-2005)</h3>
+                          
+                                <p class="card1__text">Rosa Parks est une afro-américaine qui est connue pour être une figure feministe. Elle a dédié sa vie à lutter pour le droit civique des femmes et contre la ségrégation. Elle refusera de céder sa place à un blance dans le bus et boycottera la compagnie de transport. Grâce à elle, les lois ségrégationnistes dans les bus seront abolies.
+           
+                                       
+            
+                              </div>
+                            </div>  
+                            </div>
+
+                        <div class="carousel-item black-text">
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 12.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Simone Veil<br>(1927-2017)</h3>
+                          
+                                <p class="card1__text">Simone Veil est une jeune rescapée d'Auschwitz. Elle devient ministre de la Santé et présidente du Parlement européen. Elle lutte pour les droits de la femme et à l'origine de la légalisation de l'avortement.
+            
+           
+                                       
+            
+                              </div>
+                            </div>  
+                            </div>
+                            <div class="carousel-item black-text">
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 13.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Malala Yousafzai<br>Née en 1997</h3>
+                          
+                                <p class="card1__text">Malala Yousafzai est une jeune femme luutant pour l’éducation pour tous et contre les inégalité subies par les femmes. Luttant contre les talibans de son pays et blessée par balle, elle déménagea en Grande Bretagne. Elle remporte de nombreux prix pour récompenser son courage et devient le plus jeune prix Nobel de la paix de l’histoire à 17 ans.</p>
+            
+            
+           
+                                       
+            
+                              </div>
+                            </div>  
+                            </div>
+                  
+
+        
+        
+          </div>
+        </section>
+    
+
+     </section>
+
+    <section class="container">
+        <h2>Frise chronlogique
+            du  féminisme</h2>
+            <img src="public/icon/Frise.svg">
+
+    </section>
+
+    <section class="container">
+        <h2>Glossaire</h2>
+        <article>
+            <p>Revendication : Action de revendiquer, de réclamer ce qui est dû, l'exercice d'un droit, etc.
+            </p>
+            <p>Mouvement féministe : Mouvement social qui a pour objet l'émancipation de la femme, l'extension de ses droits en vue d'égaliser son statut avec celui de l'homme, en particulier dans le domaine juridique, politique, économique; doctrine, idéologie correspondante.
+            </p>
+            <p>Patriarcat : Le patriarcat est, dans son acception moderne, « une forme d’organisation sociale et juridique fondée sur la détention de l’autorité par les hommes, à l'exclusion explicite des femmes ».
+            </p>
+            <p>LGBT : Qui concerne les lesbiennes, les gays, les bisexuels et les transgenres.
+            </p>
+            <p>Pseudonyme : Nom choisi par une personne pour masquer son identité.
+            </p>
+            <p>Blog : Journal personnel, chronique d'humeur sur Internet.
+            </p>
+            <p>Prix Nobel de la paix : récompense " la personnalité ayant le plus ou le mieux contribué au rapprochement des peuples, à la suppression ou à la réduction des armées permanentes, à la réunion et à la propagation des progrès pour la paix ".
+
+            </p>
+            <p>Légiférer : Faire des lois.</p>
+
+        </article>
+    </section>
+
+    <section class="container">
+        <h2>Vidéo</h2>
+        <video src="">
+    </section>
+</body>
+
+    <footer class="footer">
+        <p>Souhayl Sedira-Groupe C2</p>
+        <address class="footer__address"></address><p>Pour me contacter par mail cliquez <a href=mailto:souhayl.sedira23@gmail.com >ici</a> </p>
+        <div class="footer__social">
+            <h3 class="footer__title">Nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+              <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook 1.svg" alt="icone facebook"></a></li>
+              <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram 1.svg" alt="icone instagram"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter 1.svg " alt="icone twitter"></a></li>
+        </div>
+
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href=http://mmimontbeliard.com/ >MMI de Montbéliard</a> </p>
+
+    </footer>
+
+    <main>

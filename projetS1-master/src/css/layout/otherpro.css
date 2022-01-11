@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+
+  padding:0px
+
+  
+}
+
+.list__item {
+  margin-bottom: 9%;
+  list-style: none;
+
+
+}
+
+.list__item--link {
+  color: #F14848;
+  text-decoration: none;
+  padding-left: 3%;
+  font-style: italic;
+  font-weight: bold;
+  
+  
+}
+

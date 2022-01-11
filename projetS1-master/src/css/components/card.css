@@ -1,0 +1,148 @@
+.body{
+  width: fit-content;
+  background-color: #FFAFAD;
+}
+
+.allcards {
+
+align-items: center;
+flex-direction: column;
+display: flex;
+margin: 30%;
+margin-bottom: 0px;
+justify-content: center;}
+
+.allcard {
+
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin: 30%;
+  margin-bottom: 0px;
+  justify-content: center;
+  
+}
+.card {
+background-color: white;
+width: 170%;
+border-radius: 7% ;
+margin-top: 20%;
+box-shadow: grey;
+align-items: center;
+flex-direction: column;
+display: flex;
+margin: 30%;
+margin-bottom: 0px;
+justify-content: center;
+border: solid #0E235B 1px;
+margin-bottom: 10%;
+
+
+
+
+}
+
+.allcard__title{
+  color: #F14848;
+  font-family: 'Lato', sans-serif; 
+  text-decoration: underline #0E235B ; 
+  font-style: italic;
+}
+
+.card__polygon {
+  position: absolute;
+  width: 381.5px;
+  height: 59.25px;
+  left: -4.5px;
+  top: 1321px;
+  
+}
+
+.card__image {
+
+  background-size: cover;
+  border:solid #0E235B 5px;
+  
+
+}
+
+
+
+
+
+
+/* Même technique utilisé pour "hero" => flex sert à aligner le contenu en bas de l'élément et laisse la possibilité au texte de s'étendre vers le haut. */
+.card-body {
+  flex-wrap: wrap;
+  
+
+}
+.card__title {
+  font-family : "Playfair Display", serif ;
+  font-size: 1rem;
+  padding: 3%;
+  content: ""; 
+  flex: 1 0; 
+  border-bottom: 2px solid #0E235B; 
+  margin: auto; 
+ 
+
+}
+
+.card__title-link {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #0E235B
+  
+
+}
+
+.card__intro {
+  font-family : "Lato", sans-serif ;
+  margin: 10%;
+  font-size: var(--text-sm);
+
+}
+
+.card__intro-link{
+  font-family : "Lato", sans-serif ;
+  font-size: var(--text-sm);
+  text-decoration: none;
+  padding: 3%;
+  color: #0E235B
+
+}
+
+.card__button{
+  font-size: 60%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0 10%;
+  margin: 4% 28% ;
+  background-color: #0E235B;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.poster{
+    justify-content: center;
+    margin: 40%;
+    width: 150%;
+
+}
+
+.poster__image{
+  width: 200%;
+}
+
+.poster__legend {
+  color: #792728;
+  text-align: center ;
+  font-size: 70%;
+}
+
+
+ 
+
+

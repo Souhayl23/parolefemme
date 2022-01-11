@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La parole d'une femme</title>
+    <link rel="stylesheet"  href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header " 
+    @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+    :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start" >
+            <a href="/">          
+            <img class="header__logo" src="public/icon/Logo.svg" alt="Logo de parole d'une femme">
+
+        </a></div>
+  
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+  
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="savoir+.html" ><img class="enfr" src="public/icon/Boutons anglais français (1).svg" alt="bouton anglais fr"></a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="histoire.html">The History of Feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="malala.html">Malala Yousafzai: an example of modern feminism</a></li>
+                    <li class="menu__item2"><a class="menu__link" href="saba.html">"Une fille dans la rivière : le prince du pardon"</a></li>
+                    <li class="menu__item"><a class="menu__link" href="savoir+.html">Read more</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autre-projets.html">Other projects</a></li>
+                </ul>
+                <img class="decorform" src="public/icon/Formes du décors.svg">
+            </nav>
+        </div>
+
+    </header> 
+
+     <div class="hero__title">
+        <h1 class="hero__title--text2">Read more</h1>
+
+        <img class="hero__rectangle7" src="public/icon/Rectangle 78.svg">
+
+     </div>
+    <body class="grey darken-3 " >
+
+
+        <section class="container">
+          <div class="carousel carousel-slider">
+              <div class="carousel-item black-text" >
+              <div class="card1">
+                  <div class="card1__image">
+                     <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 6.webp">
+                    </div>
+                
+                <div class="card1-content">
+                  <h3 class="card1__title">Olympe De Gouges<br>
+                    (1748-1793)</h3>
+            
+                  <p class="card1__text">Olympe De Gouges is a revolutionary heroine considered to be one of the first French feminists. She is best known for having written her famous text entitled "Declaration of the Rights of Women and the Citizen". 
+                    A text that would lay the foundations of feminism.</p>
+                </div>
+              </div>  
+              </div>
+              <div class="carousel-item black-text" >
+                <div class="card1">
+                    <div class="card1__image">
+                       <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 7.webp">
+                      </div>
+                  
+                  <div class="card1-content">
+                    <h3 class="card1__title">Clara Zetkin<br>(1857-1933)</h3>
+              
+                    <p class="card1__text">Clara Zetkin was one of the forerunners of the struggle for women's emancipation, a German communist activist who devoted her life to organising and mobilising women workers, textile and agricultural workers, domestic servants and housekeepers to fight for their rights and to become involved in the struggle for social change.
+
+                  </div>
+                </div>  
+                </div> 
+                <div class="carousel-item black-text" >
+                    <div class="card1">
+                        <div class="card1__image">
+                           <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 8.webp">
+                          </div>
+                      
+                      <div class="card1-content">
+                        <h3 class="card1__title">Emmeline Pankhurst<br>(1858-1928)</h3>
+                  
+                        <p class="card1__text">Emmeline Pankhurst was a leading figure in the suffragette movement.
+                          She pioneered controversial tactics to win the right to vote for women. She was even locked up in prison for her ideals but never stopped fighting for them.
+                               
+    
+                      </div>
+                    </div>  
+                    </div> 
+
+                    <div class="carousel-item black-text" >
+                        <div class="card1">
+                            <div class="card1__image">
+                               <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 9.webp">
+                              </div>
+                          
+                          <div class="card1-content">
+                            <h3 class="card1__title">Émilie Gourd<br>(1879-1946)</h3>
+                      
+                            <p class="card1__text">A journalist at heart, a brilliant orator, President of the Swiss Association for Women's Suffrage from 1914 to 1928, Émilie Gourd devoted all her energy to obtaining the right to vote for women in Switzerland.
+                                   
+        
+                          </div>
+                        </div>  
+                        </div> 
+                        <div class="carousel-item black-text">
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 10.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Marguerite Yourcenar<br>(1903-1987)</h3>
+                          
+                                <p class="card1__text">Marguerite Yourcenar was the first woman to join the Académie Française. A writer and poet, she is the author of the Memoirs of Hadrian. A deep humanism emanates from her works.
+           
+                                       
+            
+                              </div>
+                            </div>  
+                        </div> 
+                        <div class="carousel-item black-text">  
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 11.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Rosa Parks<br>(1913-2005)</h3>
+                          
+                                <p class="card1__text">Rosa Parks is an African-American woman who is known as a feminist figure. She dedicated her life to fighting for women's civil rights and against segregation. She refused to give up her seat on the bus to a white man and boycotted the transport company. Thanks to her, the segregation laws on buses were abolished.
+           
+                                       
+            
+                              </div>
+                            </div>  
+                            </div>
+
+                        <div class="carousel-item black-text">
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 12.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Simone Veil<br>(1927-2017)</h3>
+                          
+                                <p class="card1__text">Simone Veil is a young survivor of Auschwitz. She became Minister of Health and President of the European Parliament. She fought for women's rights and was behind the legalisation of abortion.
+            
+           
+                                       
+            
+                              </div>
+                            </div>  
+                            </div>
+                            <div class="carousel-item black-text">
+                            <div class="card1">
+                                <div class="card1__image">
+                                   <img src="public/img/Marguerite_Yourcenar-Bailleul-1982.10.04 13.webp">
+                                  </div>
+                              
+                              <div class="card1-content">
+                                <h3 class="card1__title">Malala Yousafzai<br>Née en 1997</h3>
+                          
+                                <p class="card1__text">Malala Yousafzai is a young woman fighting for education for all and against the inequality suffered by women. Fighting against the Taliban in her country, she was shot and moved to the UK. She won numerous awards for her courage and became the youngest Nobel Peace Prize winner in history at the age of 17.</p>
+            
+            
+           
+                                       
+            
+                              </div>
+                            </div>  
+                            </div>
+                  
+
+        
+        
+          </div>
+        </section>
+    
+
+     </section>
+
+    <section class="container">
+        <h2>Timeline
+          of feminism</h2>
+            <img src="public/icon/Frise.svg">
+
+    </section>
+
+    <section class="container">
+        <h2>Glossaire</h2>
+        <article>
+            <p><b>To claim:</b> to demand what is due, the exercise of a right, etc.
+            </p>
+            <p><b>Feminist movement:</b> Social movement whose aim is the emancipation of women, the extension of their rights in order to equalise their status with that of men, particularly in the legal, political and economic spheres; corresponding doctrine and ideology.
+            </p>
+            <p><b>Patriarchy:</b> Patriarchy is, in its modern sense, "a form of social and legal organisation based on the holding of authority by men, to the explicit exclusion of women".
+            </p>
+            <p><b>LGBT:</b>Lesbian, gay, bisexual and transgender.
+            </p>
+            <p><b>Pseudonym:</b> A name chosen by a person to hide their identity.
+            </p>
+            <p><b>Blog:</b> Personal diary, mood column on the Internet.
+            </p>
+            <p><b>Nobel Peace Prize:</b> rewards "the personality who has contributed most or best to the rapprochement of peoples, to the abolition or reduction of standing armies, to the gathering and propagation of progress for peace".
+
+            </p>
+            <p><b>To legislate:</b> To make laws.</p>
+
+        </article>
+    </section>
+
+    <section class="container">
+        <h2>Video</h2>
+        <video src="">
+    </section>
+</body>
+
+    <footer class="footer">
+        <p>Souhayl Sedira-Group C2</p>
+        <address class="footer__address"></address><p>To contact me by email click <a href=mailto:souhayl.sedira23@gmail.com >ici</a> </p>
+        <div class="footer__social">
+            <h3 class="footer__title">Follow us</h3>
+            <ul class="footer__list list-unstyled">
+              <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook 1.svg" alt="icone facebook"></a></li>
+              <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram 1.svg" alt="icone instagram"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter 1.svg " alt="icone twitter"></a></li>
+        </div>
+
+        <p>Project carried out as part of an educational exercise in the department <a href=http://mmimontbeliard.com/ >MMI de Montbéliard</a> </p>
+
+    </footer>
+
+    <main>
